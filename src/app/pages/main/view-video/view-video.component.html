@@ -1,0 +1,24 @@
+<app-header></app-header>
+<div class="pageWrapper">
+  <mat-card class="mat-mdc-card mdc-card cardWithShadow theme-card">
+    <mat-card-header class="mat-mdc-card-header b-b">
+      <div class="mat-mdc-card-header-text" (click)="goBack()">
+        <mat-card-title class="mat-mdc-card-title m-b-0">
+          <mat-icon class="text-center backIcn">arrow_back_ios</mat-icon>
+          <span class="backBtn">back</span>
+        </mat-card-title>
+      </div>
+    </mat-card-header>
+    <mat-card-content class="mat-mdc-card-content">
+      <div class="embed-responsive embed-responsive-1by1 m-0 p-0" style="position: relative;">
+        <video [src]="param1" class="vdWidth" height="500" controls></video>
+        <div class="overlay-video">
+          <p>{{vdNm}}</p>
+        </div>
+        <div class="overlay-video1">
+          <p>{{vdSz}}</p>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
